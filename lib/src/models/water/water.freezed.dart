@@ -30,12 +30,8 @@ mixin _$Water {
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt => throw _privateConstructorUsedError;
 
-  /// Serializes this Water to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Water
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $WaterCopyWith<Water> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -61,8 +57,6 @@ class _$WaterCopyWithImpl<$Res, $Val extends Water>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Water
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -114,8 +108,6 @@ class __$$WaterImplCopyWithImpl<$Res>
       _$WaterImpl _value, $Res Function(_$WaterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Water
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -194,14 +186,12 @@ class _$WaterImpl implements _Water {
                 other.modifiedAt == modifiedAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, id, quantity, recordedAt, modifiedAt);
 
-  /// Create a copy of Water
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$WaterImplCopyWith<_$WaterImpl> get copyWith =>
@@ -241,11 +231,8 @@ abstract class _Water implements Water {
   @TimestampConverter()
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt;
-
-  /// Create a copy of Water
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$WaterImplCopyWith<_$WaterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

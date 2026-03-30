@@ -27,12 +27,8 @@ mixin _$UnitPreferences {
   WeightUnit get weight => throw _privateConstructorUsedError;
   WeightUnit get workoutWeight => throw _privateConstructorUsedError;
 
-  /// Serializes this UnitPreferences to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of UnitPreferences
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $UnitPreferencesCopyWith<UnitPreferences> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -62,8 +58,6 @@ class _$UnitPreferencesCopyWithImpl<$Res, $Val extends UnitPreferences>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of UnitPreferences
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,8 +122,6 @@ class __$$unitPreferencesImplCopyWithImpl<$Res>
       _$unitPreferencesImpl _value, $Res Function(_$unitPreferencesImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of UnitPreferences
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -222,14 +214,12 @@ class _$unitPreferencesImpl implements _unitPreferences {
                 other.workoutWeight == workoutWeight));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, distance, energy, height, water, weight, workoutWeight);
 
-  /// Create a copy of UnitPreferences
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$unitPreferencesImplCopyWith<_$unitPreferencesImpl> get copyWith =>
@@ -268,11 +258,8 @@ abstract class _unitPreferences implements UnitPreferences {
   WeightUnit get weight;
   @override
   WeightUnit get workoutWeight;
-
-  /// Create a copy of UnitPreferences
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$unitPreferencesImplCopyWith<_$unitPreferencesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

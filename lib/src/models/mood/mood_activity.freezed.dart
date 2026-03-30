@@ -23,12 +23,8 @@ mixin _$MoodActivity {
   String get icon => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
 
-  /// Serializes this MoodActivity to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of MoodActivity
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MoodActivityCopyWith<MoodActivity> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,8 +48,6 @@ class _$MoodActivityCopyWithImpl<$Res, $Val extends MoodActivity>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of MoodActivity
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -92,8 +86,6 @@ class __$$MoodActivityImplCopyWithImpl<$Res>
       _$MoodActivityImpl _value, $Res Function(_$MoodActivityImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of MoodActivity
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -136,13 +128,11 @@ class _$MoodActivityImpl extends _MoodActivity {
             (identical(other.name, name) || other.name == name));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, icon, name);
 
-  /// Create a copy of MoodActivity
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MoodActivityImplCopyWith<_$MoodActivityImpl> get copyWith =>
@@ -169,11 +159,8 @@ abstract class _MoodActivity extends MoodActivity {
   String get icon;
   @override
   String get name;
-
-  /// Create a copy of MoodActivity
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MoodActivityImplCopyWith<_$MoodActivityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -34,12 +34,8 @@ mixin _$Cardio {
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt => throw _privateConstructorUsedError;
 
-  /// Serializes this Cardio to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Cardio
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $CardioCopyWith<Cardio> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -69,8 +65,6 @@ class _$CardioCopyWithImpl<$Res, $Val extends Cardio>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Cardio
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,8 +103,6 @@ class _$CardioCopyWithImpl<$Res, $Val extends Cardio>
     ) as $Val);
   }
 
-  /// Create a copy of Cardio
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CardioExerciseCopyWith<$Res> get exercise {
@@ -147,8 +139,6 @@ class __$$CardioImplCopyWithImpl<$Res>
       _$CardioImpl _value, $Res Function(_$CardioImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Cardio
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -250,14 +240,12 @@ class _$CardioImpl extends _Cardio {
                 other.modifiedAt == modifiedAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, exercise, minutesPerformed,
       caloriesBurned, recordedAt, modifiedAt);
 
-  /// Create a copy of Cardio
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$CardioImplCopyWith<_$CardioImpl> get copyWith =>
@@ -306,11 +294,8 @@ abstract class _Cardio extends Cardio {
   @TimestampConverter()
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt;
-
-  /// Create a copy of Cardio
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$CardioImplCopyWith<_$CardioImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

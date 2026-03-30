@@ -30,12 +30,8 @@ mixin _$CardioExercise {
   @JsonKey(name: 'recorded_at')
   DateTime? get recordedAt => throw _privateConstructorUsedError;
 
-  /// Serializes this CardioExercise to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of CardioExercise
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $CardioExerciseCopyWith<CardioExercise> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -66,8 +62,6 @@ class _$CardioExerciseCopyWithImpl<$Res, $Val extends CardioExercise>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of CardioExercise
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,8 +122,6 @@ class __$$CardioExerciseImplCopyWithImpl<$Res>
       _$CardioExerciseImpl _value, $Res Function(_$CardioExerciseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of CardioExercise
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -212,14 +204,12 @@ class _$CardioExerciseImpl implements _CardioExercise {
                 other.recordedAt == recordedAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, name, cardioActivity, met, isPreset, recordedAt);
 
-  /// Create a copy of CardioExercise
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$CardioExerciseImplCopyWith<_$CardioExerciseImpl> get copyWith =>
@@ -261,11 +251,8 @@ abstract class _CardioExercise implements CardioExercise {
   @TimestampConverter()
   @JsonKey(name: 'recorded_at')
   DateTime? get recordedAt;
-
-  /// Create a copy of CardioExercise
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$CardioExerciseImplCopyWith<_$CardioExerciseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

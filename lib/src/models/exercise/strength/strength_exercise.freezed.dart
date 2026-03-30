@@ -33,12 +33,8 @@ mixin _$StrengthExercise {
   @JsonKey(name: 'recorded_at')
   DateTime? get recordedAt => throw _privateConstructorUsedError;
 
-  /// Serializes this StrengthExercise to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StrengthExercise
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StrengthExerciseCopyWith<StrengthExercise> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -70,8 +66,6 @@ class _$StrengthExerciseCopyWithImpl<$Res, $Val extends StrengthExercise>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StrengthExercise
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,8 +132,6 @@ class __$$StrengthExerciseImplCopyWithImpl<$Res>
       $Res Function(_$StrengthExerciseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StrengthExercise
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -244,7 +236,7 @@ class _$StrengthExerciseImpl implements _StrengthExercise {
                 other.recordedAt == recordedAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -255,9 +247,7 @@ class _$StrengthExerciseImpl implements _StrengthExercise {
       isPreset,
       recordedAt);
 
-  /// Create a copy of StrengthExercise
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StrengthExerciseImplCopyWith<_$StrengthExerciseImpl> get copyWith =>
@@ -304,11 +294,8 @@ abstract class _StrengthExercise implements StrengthExercise {
   @TimestampConverter()
   @JsonKey(name: 'recorded_at')
   DateTime? get recordedAt;
-
-  /// Create a copy of StrengthExercise
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StrengthExerciseImplCopyWith<_$StrengthExerciseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

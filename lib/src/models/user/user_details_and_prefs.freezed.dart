@@ -32,12 +32,8 @@ mixin _$UserDetailsAndPrefs {
   @JsonKey(name: UserDetailsAndPrefsStorageKeys.acceptedTermsVersion)
   int get acceptedTermsVersion => throw _privateConstructorUsedError;
 
-  /// Serializes this UserDetailsAndPrefs to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $UserDetailsAndPrefsCopyWith<UserDetailsAndPrefs> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -74,8 +70,6 @@ class _$UserDetailsAndPrefsCopyWithImpl<$Res, $Val extends UserDetailsAndPrefs>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,8 +103,6 @@ class _$UserDetailsAndPrefsCopyWithImpl<$Res, $Val extends UserDetailsAndPrefs>
     ) as $Val);
   }
 
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UserDetailsCopyWith<$Res> get userDetails {
@@ -119,8 +111,6 @@ class _$UserDetailsAndPrefsCopyWithImpl<$Res, $Val extends UserDetailsAndPrefs>
     });
   }
 
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $UnitPreferencesCopyWith<$Res> get unitPreferences {
@@ -129,8 +119,6 @@ class _$UserDetailsAndPrefsCopyWithImpl<$Res, $Val extends UserDetailsAndPrefs>
     });
   }
 
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DarkModePreferenceCopyWith<$Res> get darkModePreference {
@@ -179,8 +167,6 @@ class __$$UserDetailsAndPreferencesImplCopyWithImpl<$Res>
       $Res Function(_$UserDetailsAndPreferencesImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -271,14 +257,12 @@ class _$UserDetailsAndPreferencesImpl implements _UserDetailsAndPreferences {
                 other.acceptedTermsVersion == acceptedTermsVersion));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, isOnboarding, userDetails,
       unitPreferences, darkModePreference, acceptedTermsVersion);
 
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$UserDetailsAndPreferencesImplCopyWith<_$UserDetailsAndPreferencesImpl>
@@ -325,11 +309,8 @@ abstract class _UserDetailsAndPreferences implements UserDetailsAndPrefs {
   @override
   @JsonKey(name: UserDetailsAndPrefsStorageKeys.acceptedTermsVersion)
   int get acceptedTermsVersion;
-
-  /// Create a copy of UserDetailsAndPrefs
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$UserDetailsAndPreferencesImplCopyWith<_$UserDetailsAndPreferencesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

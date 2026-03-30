@@ -44,12 +44,8 @@ mixin _$Mood {
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt => throw _privateConstructorUsedError;
 
-  /// Serializes this Mood to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Mood
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $MoodCopyWith<Mood> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -83,8 +79,6 @@ class _$MoodCopyWithImpl<$Res, $Val extends Mood>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Mood
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -173,8 +167,6 @@ class __$$MoodImplCopyWithImpl<$Res>
   __$$MoodImplCopyWithImpl(_$MoodImpl _value, $Res Function(_$MoodImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Mood
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -366,7 +358,7 @@ class _$MoodImpl implements _Mood {
                 other.modifiedAt == modifiedAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -381,9 +373,7 @@ class _$MoodImpl implements _Mood {
       recordedAt,
       modifiedAt);
 
-  /// Create a copy of Mood
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$MoodImplCopyWith<_$MoodImpl> get copyWith =>
@@ -450,11 +440,8 @@ abstract class _Mood implements Mood {
   @TimestampConverter()
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt;
-
-  /// Create a copy of Mood
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$MoodImplCopyWith<_$MoodImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

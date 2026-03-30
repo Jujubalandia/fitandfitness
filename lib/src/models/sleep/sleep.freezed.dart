@@ -35,12 +35,8 @@ mixin _$Sleep {
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt => throw _privateConstructorUsedError;
 
-  /// Serializes this Sleep to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Sleep
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $SleepCopyWith<Sleep> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -68,8 +64,6 @@ class _$SleepCopyWithImpl<$Res, $Val extends Sleep>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Sleep
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,8 +127,6 @@ class __$$SleepImplCopyWithImpl<$Res>
       _$SleepImpl _value, $Res Function(_$SleepImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Sleep
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -234,14 +226,12 @@ class _$SleepImpl implements _Sleep {
                 other.modifiedAt == modifiedAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, id, sleepQuality, notes, sleptAt, recordedAt, modifiedAt);
 
-  /// Create a copy of Sleep
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$SleepImplCopyWith<_$SleepImpl> get copyWith =>
@@ -292,11 +282,8 @@ abstract class _Sleep implements Sleep {
   @TimestampConverter()
   @JsonKey(name: 'modified_at')
   DateTime get modifiedAt;
-
-  /// Create a copy of Sleep
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$SleepImplCopyWith<_$SleepImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

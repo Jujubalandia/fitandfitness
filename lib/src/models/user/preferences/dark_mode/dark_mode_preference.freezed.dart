@@ -22,12 +22,8 @@ DarkModePreference _$DarkModePreferenceFromJson(Map<String, dynamic> json) {
 mixin _$DarkModePreference {
   DarkMode get darkMode => throw _privateConstructorUsedError;
 
-  /// Serializes this DarkModePreference to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of DarkModePreference
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $DarkModePreferenceCopyWith<DarkModePreference> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,8 +47,6 @@ class _$DarkModePreferenceCopyWithImpl<$Res, $Val extends DarkModePreference>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of DarkModePreference
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,8 +80,6 @@ class __$$DarkModePreferenceImplCopyWithImpl<$Res>
       $Res Function(_$DarkModePreferenceImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of DarkModePreference
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,13 +120,11 @@ class _$DarkModePreferenceImpl implements _DarkModePreference {
                 other.darkMode == darkMode));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, darkMode);
 
-  /// Create a copy of DarkModePreference
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$DarkModePreferenceImplCopyWith<_$DarkModePreferenceImpl> get copyWith =>
@@ -158,11 +148,8 @@ abstract class _DarkModePreference implements DarkModePreference {
 
   @override
   DarkMode get darkMode;
-
-  /// Create a copy of DarkModePreference
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$DarkModePreferenceImplCopyWith<_$DarkModePreferenceImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
